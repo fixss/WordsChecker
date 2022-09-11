@@ -9,11 +9,6 @@ public class WordsChecker {
     public WordsChecker(String text) {
         this.text = text;
     }
-
-    public String getText() {
-        return text;
-    }
-
     public boolean hasWord(String findText) {
         Set<String> set = new HashSet<>();
         String[] words = text.split("\\P{IsAlphabetic}+");
